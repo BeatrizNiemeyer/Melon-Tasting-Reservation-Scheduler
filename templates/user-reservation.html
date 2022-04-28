@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block head %} 
+{% endblock %}
+
+{% block body %}
+
+<h1>Your reservations!</h1>
+       
+        {% for apt in user_appointments%}
+            <ul>
+                <li>{{apt.date_str}} at {{apt.time_str}}</li>
+             </ul> 
+        {% endfor %}
+{% endblock %}

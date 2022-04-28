@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}Melon Tasting Reservation Scheduler{% endblock %}
+{% block head %} 
+{% endblock %}
+
+{% block body %}
+<br>
+<a href="/user_reservations">See your reservations here! </a>
+
+<form action="/schedule_appointment" method="POST">
+    <label>Schedule an Appointment:</label>
+    <br>
+        <p>
+            <label for="date"> Date:</label>
+            <input type="date" name="date">
+        </p>
+
+        <p>
+            <label for="time">Start Time:</label>
+            <input type="time" name="start_time">
+        </p>
+
+        <p>
+            <label for="time">End Time:</label>
+            <input type="time" name="end_time">
+        </p>
+
+        <button class="button" >Search</button>
+    
+</form>
+{% endblock %}
