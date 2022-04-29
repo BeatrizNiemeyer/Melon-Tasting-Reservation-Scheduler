@@ -18,7 +18,7 @@
 
 ## Technologies Used
 - I am using Python in the backend, where I built my server, model, crud, seed and tests files
-- I am Flask to build my routes
+- I am using Flask to build my routes in Python
 - I am also using Postgresql and Sqlalchemy for my database, where I built my User and Appointment tables.
 - For the frontend I am using Jinja to populate my HTML templates.
 
@@ -27,9 +27,9 @@
 ## Features
 - Login page.
 
-- In the main page, user can select the date that they would like to go in the melon tasting, and the start and end time as well. If they select a day or time that is not available, a flash message will let the user know, so they can try it again. They can also check their scheduled appointments.
+- In the main page, user can select the date that they would like to go in the melon tasting, and the start and end times as well. If they select a day or time that is not available, a flash message will let the user know, so they can try it again. They can also check their scheduled appointments.
 
-- After submitting a date and times, the user is redirected to a page where available times are displayed. Every time has a button where the user can select the time that they would like.
+- After submitting date and times, the user is redirected to a page where available times are displayed. Every time has a button where the user can select to schedule the appointment.
 
 
 - After selecting the time, the user is redirected to the homepage, and a flash message will let the user know that their appointment was successfully scheduled.
