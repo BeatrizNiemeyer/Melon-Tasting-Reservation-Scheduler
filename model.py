@@ -20,10 +20,9 @@ class Appointment(db.Model):
 
     apt_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey("users.user_id"))
-    date = db.Column(db.Time) 
     date_str = db.Column(db.String)
-    time = db.Column(db.Time) 
-    time_str = db.Column(db.String) 
+    time_str = db.Column(db.String)
+    time_str2 = db.Column(db.String) 
     
     user = db.relationship("User", back_populates="apt")
 
@@ -38,6 +37,15 @@ def connect_to_db(flask_app, db_uri="postgresql:///mtr_data", echo=False):
     db.init_app(flask_app)
 
     print("Connected to the db!")
+
+def example_data():
+    """ Create example data for the test database"""
+
+    user_1 = User(username='beatriz')
+    
+    db.session.add(user_1)
+    db.session.commit()
+
 
 if __name__ == "__main__":
     from server import app

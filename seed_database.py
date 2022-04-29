@@ -26,6 +26,7 @@ for user in user_data:
     user_id = crud.get_user_id_by_username(username)
     date_str = user['date_str']
     time_str = user['time_str']
-    appointment = crud.create_appointment(user_id, date_str, time_str)
+    time_str2 = user['time_str2']
+    appointment = crud.create_appointment(user_id, date_str, time_str, time_str2)
     db.session.add(appointment)
     db.session.commit()

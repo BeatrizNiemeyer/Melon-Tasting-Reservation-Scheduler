@@ -1,8 +1,6 @@
 from model import db, User, Appointment, connect_to_db
 
 
-
-
 def create_user(username):
     """ Create and return a user """
 
@@ -11,10 +9,10 @@ def create_user(username):
     return user
 
 
-def create_appointment(user_id, date_str, time_str):
+def create_appointment(user_id, date_str, time_str, time_str2):
     """create an appointment for tasting melons """
 
-    appointment = Appointment(user_id=user_id, date_str=date_str, time_str=time_str)
+    appointment = Appointment(user_id=user_id, date_str=date_str, time_str=time_str,time_str2 =time_str2)
 
     return appointment
 

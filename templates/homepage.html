@@ -1,15 +1,17 @@
 {% extends 'base.html' %}
 
 {% block title %}Melon Tasting Reservation Scheduler{% endblock %}
+
 {% block head %} 
 {% endblock %}
 
 {% block body %}
 <br>
-<a href="/user_reservations">See your reservations here! </a>
+<h3><a href="/user_reservations">See your reservations here! </a></h3>
+<br>
 
 <form action="/schedule_appointment" method="POST">
-    <label>Schedule an Appointment:</label>
+    <h1><label>Schedule an Appointment:</label></h1>
     <br>
         <p>
             <label for="date"> Date:</label>
