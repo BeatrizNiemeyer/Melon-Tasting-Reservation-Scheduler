@@ -35,6 +35,8 @@
 - After selecting the time, the user is redirected to the homepage, and a flash message will let the user know that their appointment was successfully scheduled.
 
 
+https://user-images.githubusercontent.com/98921140/188916780-07fdb896-bc66-48e6-bb5f-5dc9208d3ef1.mp4
+
 ## Setup
 
 To install it locally:

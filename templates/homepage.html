@@ -2,7 +2,7 @@
 
 {% block title %}Melon Tasting Reservation Scheduler{% endblock %}
 
-{% block head %} 
+{% block head %}
 {% endblock %}
 
 {% block body %}
@@ -13,22 +13,22 @@
 <form action="/schedule_appointment" method="POST">
     <h1><label>Schedule an Appointment:</label></h1>
     <br>
-        <p>
-            <label for="date"> Date:</label>
-            <input type="date" name="date">
-        </p>
+    <p>
+        <label for="date"> Date:</label>
+        <input type="date" name="date">
+    </p>
 
-        <p>
-            <label for="time">Start Time:</label>
-            <input type="time" name="start_time">
-        </p>
+    <p>
+        <label for="time">Start Time:</label>
+        <input type="time" name="start_time">
+    </p>
 
-        <p>
-            <label for="time">End Time:</label>
-            <input type="time" name="end_time">
-        </p>
+    <p>
+        <label for="time">End Time:</label>
+        <input type="time" name="end_time">
+    </p>
 
-        <button class="button" >Search</button>
-    
+    <button class="button">Search</button>
+
 </form>
 {% endblock %}

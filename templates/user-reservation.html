@@ -2,17 +2,17 @@
 
 {% block title %}Your Appointments!{% endblock %}
 
-{% block head %} 
+{% block head %}
 {% endblock %}
 
 {% block body %}
 
 <h1>Your reservations!</h1>
-       
-        {% for apt in user_appointments%}
-            <ul>
-                <li>{{apt.date_str}} at {{apt.time_str2}}</li>
-             </ul> 
-        {% endfor %}
-        
+
+{% for apt in user_appointments%}
+<ul>
+    <li>{{apt.date_str}} at {{apt.time_str2}}</li>
+</ul>
+{% endfor %}
+
 {% endblock %}

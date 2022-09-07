@@ -1,22 +1,25 @@
 <!doctype html>
 <html>
-  <head>
-    <title>{% block title %}{% endblock %}</title>
-    {% block head %}{% endblock %}
-    <link rel="stylesheet" href="/static/css/basic.css">
 
-  </head>
-  <body>
-  
-    {% for msg in get_flashed_messages() %}
-    <p class="flash-msg">
-      {{ msg }}
-    </p>
-    {% endfor %}
-  
-    {% block body %}{% endblock %}
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  {% block head %}{% endblock %}
+  <link rel="stylesheet" href="/static/css/basic.css">
 
-    {% block after_body %}{% endblock %}
+</head>
 
-  </body>
+<body>
+
+  {% for msg in get_flashed_messages() %}
+  <p class="flash-msg">
+    {{ msg }}
+  </p>
+  {% endfor %}
+
+  {% block body %}{% endblock %}
+
+  {% block after_body %}{% endblock %}
+
+</body>
+
 </html>
